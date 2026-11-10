@@ -96,7 +96,7 @@ Details in [docs/platforms.md](docs/platforms.md).
 
 ## Use it
 
-Say "prismatize this" (or "prism this"), followed by your decision. In Claude Code, you can also type `/prism:prismatize`.
+Say "prismatize this" (or "prism this"), followed by your decision. In Claude Code, type `/prismatize` (or `/prism:prismatize` if another command uses that name).
 
 Options, in plain words:
 - "give me the top 3" for ranked alternatives

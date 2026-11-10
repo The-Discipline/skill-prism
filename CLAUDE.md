@@ -6,7 +6,7 @@ Context for any Claude Code session working on this repo. Read it fully before c
 
 A Claude skill: a decision council for one-person businesses. One decision goes in, five independent advisors answer, two reviewers judge anonymously, a chairman gives a verdict and one action, a checker tests it before delivery.
 
-- Name: Prism (the brand). Technical identifier `prismatize`: skill, ZIP, marketplace. Repo `skill-prism`. Claude Code command: `/prism:prismatize`. Triggers: "prismatize this", "prism this", "prismatiser".
+- Name: Prism (the brand). Technical identifier `prismatize`: skill, ZIP, marketplace. Repo `skill-prism`. Claude Code command: `/prismatize` (plugin skills also answer to their bare name), `/prism:prismatize` as fallback. Triggers: "prismatize this", "prism this", "prismatiser".
 - "council" lives in descriptions and topics for search, never as a name.
 - Tagline: "One decision, five angles, one verdict."
 - Landing tagline: "The advisory board for businesses of one."

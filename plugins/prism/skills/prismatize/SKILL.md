@@ -13,7 +13,7 @@ Method: Andrej Karpathy's LLM Council (independent answers, anonymous peer revie
 
 Read `style.md` before writing anything. Every agent prompt includes it.
 
-**Explicit call.** Users can call Prism by name: `/prism:prismatize` in Claude Code, `@prismatize` in ChatGPT, `$prismatize` in Codex. It also triggers from the description.
+**Explicit call.** Users can call Prism by name: `/prismatize` in Claude Code (or `/prism:prismatize`), `@prismatize` in ChatGPT, `$prismatize` in Codex. It also triggers from the description.
 
 **Agents and models.** Where named agents are available (Claude Code with the Prism plugin installed), run each role with its plugin agent, so each one uses the right model:
 - `prism:advisor` (mid-tier model) for the five advisors

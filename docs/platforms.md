@@ -24,7 +24,7 @@ Status is updated from real tests, not from documentation. "Expected" means the 
 claude plugin marketplace add <owner>/skill-prism
 claude plugin install prism@prismatize
 ```
-Call it with `/prism:prismatize` or "prismatize this". The plugin ships one agent per role with its own model: `prism:advisor` and `prism:ranker` on Sonnet, `prism:gap-finder`, `prism:chairman` and `prism:checker` on Opus. Cheaper than running everything on the top model, with judgement kept where it matters.
+Call it with `/prismatize`, `/prism:prismatize` if another command already uses that name, or "prismatize this". The plugin ships one agent per role with its own model: `prism:advisor` and `prism:ranker` on Sonnet, `prism:gap-finder`, `prism:chairman` and `prism:checker` on Opus. Cheaper than running everything on the top model, with judgement kept where it matters.
 
 ## ChatGPT desktop app
 - Upload the `prismatize` skill folder (or the ZIP, if accepted) from the Skills section, under Plugins.
