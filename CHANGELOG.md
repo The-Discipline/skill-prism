@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.0 (2026-11-10)
+- Cross-platform: `agents/openai.yaml` for ChatGPT and Codex (display name, description, default prompt), platform-neutral wording in the skill, explicit calls documented (`/prism:prismatize`, `@prismatize`, `$prismatize`).
+- Description rewritten with use case and triggers first, since hosts shorten long descriptions.
+- Compatibility section and a per-release test checklist in the docs.
+- Install commands point to the `skill-prism` repo.
+
 ## 0.6.0 (2026-11-05)
 - Verdict check: a checker agent tests the chairman's draft on seven points (main risk resolved, coherent "what would change this", doable action, facts over assumptions, Gap Finder's key claim addressed, right outcome, style). CHANGES triggers one revision, never more.
 - New outcome, Escalate: for decisions that hinge on legal, tax or regulatory rules, binding high-stakes commitments, or that belong partly to a partner or family. Prism names who should decide and prepares the conversation. Pure legal or tax questions skip the council.

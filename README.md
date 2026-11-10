@@ -78,11 +78,21 @@ Details and all paths in [docs/how-it-works.md](docs/how-it-works.md).
 
 **Claude Code**
 ```bash
-claude plugin marketplace add <owner>/prismatize
+claude plugin marketplace add <owner>/skill-prism
 claude plugin install prism@prismatize
 ```
 
-**Other platforms:** see [docs/platforms.md](docs/platforms.md).
+**ChatGPT desktop app:** upload the `prismatize` skill from Plugins > Skills, then call it with `@prismatize`.
+
+**Codex:** copy the `prismatize` folder to `~/.agents/skills/`, then call it with `$prismatize`.
+
+**Compatibility**
+- Claude Code: full, recommended
+- Claude app: supported
+- ChatGPT desktop and Codex: expected to work, reduced mode, not tested yet
+- ChatGPT web and mobile: needs an OpenAI plugin, not available yet
+
+Details in [docs/platforms.md](docs/platforms.md).
 
 ## Use it
 

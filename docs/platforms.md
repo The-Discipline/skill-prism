@@ -1,25 +1,53 @@
 # Platforms
 
-## Claude app (web, desktop, mobile)
-- Install: download `prismatize.zip` from the latest release, then Customize > Skills > "+" > Create skill > Upload a skill.
+One skill folder, several platforms. What works where, and what to expect.
+
+## Compatibility
+
+- **Claude Code:** full. Plugin with one agent per role and its own model. Recommended.
+- **Claude app (web, desktop, mobile):** supported. Full when the session can run subagents, reduced otherwise.
+- **ChatGPT desktop app:** expected to work as a standalone skill. Reduced mode (no documented subagents). Not tested yet.
+- **Codex (CLI and IDE extension):** expected to work as a standalone skill. Not tested yet.
+- **ChatGPT web and mobile:** OpenAI only runs skills there when they are bundled in a plugin. Not available yet.
+- **Other chat assistants:** paste the instructions. Reduced mode.
+
+Status is updated from real tests, not from documentation. "Expected" means the format is supported but nobody has run Prism there yet.
+
+## Claude app
+- Download `prismatize.zip` from the latest release, then Customize > Skills > "+" > Create skill > Upload a skill.
 - Code execution must be enabled.
 - Available on all plans. On Team and Enterprise, a skill can be shared with colleagues or published to the organization's library.
-- Full mode when the session can run subagents. Otherwise Prism runs in reduced mode and says so.
 - All roles use the model selected in the app. Pick the best one available.
 
 ## Claude Code
 ```bash
-claude plugin marketplace add <owner>/prismatize
+claude plugin marketplace add <owner>/skill-prism
 claude plugin install prism@prismatize
 ```
-Full mode: advisors and reviewers run as parallel subagents. The plugin ships one agent per role with its own model: `prism:advisor` and `prism:ranker` on Sonnet, `prism:gap-finder`, `prism:chairman` and `prism:checker` on Opus. Cheaper than running everything on the top model, with judgement kept where it matters.
+Call it with `/prism:prismatize` or "prismatize this". The plugin ships one agent per role with its own model: `prism:advisor` and `prism:ranker` on Sonnet, `prism:gap-finder`, `prism:chairman` and `prism:checker` on Opus. Cheaper than running everything on the top model, with judgement kept where it matters.
 
-## Other agents that read SKILL.md
-Some agents install skills straight from a GitHub folder (TypingMind, for example). Point them at `plugins/prism/skills/prismatize`.
+## ChatGPT desktop app
+- Upload the `prismatize` skill folder (or the ZIP, if accepted) from the Skills section, under Plugins.
+- Call it with `@prismatize`, or let it trigger from the description.
+- Uploaded skills are scanned and may be held for review.
+- The skill includes `agents/openai.yaml` for its display name, description and default prompt in ChatGPT.
+- Plan availability: check that your plan shows the Skills section.
 
-## ChatGPT, Gemini and plain chat
-Paste the content of `SKILL.md` and `style.md` into a project's or custom assistant's instructions. Without subagents, Prism runs in reduced mode: one analysis, a separate attack pass, then the verdict. It's labeled "Reduced Prism" because the five advisors can't be independent in a single response.
+## Codex
+- Copy the `prismatize` folder to `~/.agents/skills/` (for you) or `.agents/skills/` in a repo (for a project).
+- Call it with `$prismatize`.
+
+## Other chat assistants
+Paste the content of `SKILL.md` and `style.md` into the assistant's instructions. Prism runs in reduced mode.
 
 ## Reduced vs full mode
 - **Full:** five advisors answer without seeing each other. Their agreement is a real signal.
-- **Reduced:** everything is written in one context, so angles influence each other. Still useful, less independent.
+- **Reduced:** everything is written in one context, so angles influence each other. Still useful, less independent. The output says "Reduced Prism".
+
+## Test checklist for each release
+On every platform marked supported or expected:
+1. The skill installs without error.
+2. It triggers on "prismatize this" and on its explicit call.
+3. Reference files load (style rules applied, context template offered).
+4. Full or reduced mode is stated correctly.
+5. The output ends with the "show the council" line.

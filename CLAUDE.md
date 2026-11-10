@@ -6,7 +6,7 @@ Context for any Claude Code session working on this repo. Read it fully before c
 
 A Claude skill: a decision council for one-person businesses. One decision goes in, five independent advisors answer, two reviewers judge anonymously, a chairman gives a verdict and one action, a checker tests it before delivery.
 
-- Name: Prism (the brand). Every technical identifier is `prismatize`: repo, skill, ZIP. Claude Code command: `/prism:prismatize`. Triggers: "prismatize this", "prism this", "prismatiser".
+- Name: Prism (the brand). Technical identifier `prismatize`: skill, ZIP, marketplace. Repo `skill-prism`. Claude Code command: `/prism:prismatize`. Triggers: "prismatize this", "prism this", "prismatiser".
 - "council" lives in descriptions and topics for search, never as a name.
 - Tagline: "One decision, five angles, one verdict."
 - Landing tagline: "The advisory board for businesses of one."
@@ -39,6 +39,10 @@ A Claude skill: a decision council for one-person businesses. One decision goes 
 - **Learning loop:** store outcomes in the context file, never Prism's own verdicts (anchoring).
 - **Model recommendations live in the README, dated, as "tested with".** Never in SKILL.md. Plain advice: best model in the picker, thinking on.
 - **Distribution:** GitHub repo as source of truth and Claude Code marketplace; a ready-to-upload ZIP on each GitHub Release for Claude app users; goua.la page for explanation; Notion version of the context template on the website, not in the repo. Submit to Anthropic's plugin directory only after testing.
+
+- **Cross-platform (Nov 2026):** one skill folder for Claude and OpenAI (ChatGPT desktop, Codex), both on the open Agent Skills standard. `agents/openai.yaml` inside the skill holds OpenAI display metadata; the Claude Code plugin agents stay at plugin level. ChatGPT web and mobile only run plugin-bundled skills: an OpenAI plugin is a later step, built from OpenAI's docs, not guessed. Compatibility in the docs comes from real tests only.
+- **Description order:** use case and trigger words first, tagline last. Hosts shorten descriptions when many skills are installed.
+- **Repo name:** `skill-prism` (series with `skill-plume`). Skill identifier stays `prismatize`, marketplace `prismatize`.
 
 ## Rejected ideas (don't reintroduce without a new reason)
 
