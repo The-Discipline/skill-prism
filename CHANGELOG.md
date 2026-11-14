@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.1 (2026-11-14)
+- Context loading: a `CLAUDE.md` is no longer read as business context (it describes a code project). Grey matter / Matière grise pages and any connected app or link count as business sources.
+- The missing-context message follows the user's language.
+- Agents: each one works only from its prompt and opens no file, so the Buyer only knows the Buyer brief.
+- README: Status section. `scripts/skill_review.py` for release reviews.
+- Docs: identity brief updated (v0.7, Satoshi and Inter); CLAUDE.md points to Plume and the shared business source.
+
 ## 0.7.0 (2026-11-10)
 - Cross-platform: `agents/openai.yaml` for ChatGPT and Codex (display name, description, default prompt), platform-neutral wording in the skill, explicit calls documented (`/prism:prismatize`, `@prismatize`, `$prismatize`).
 - Description rewritten with use case and triggers first, since hosts shorten long descriptions.

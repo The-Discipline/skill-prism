@@ -111,6 +111,10 @@ Tested with (October 2026):
 
 A full run uses 9 agents, 10 when the checker asks for a revision. In Claude Code, the plugin assigns models by role: the advisors and the Ranker run on a mid-tier model, the Gap Finder, the Chairman and the Checker on the top model. On entry-level plans, it can use a noticeable share of your usage window.
 
+## Status
+
+**v0.7.1.** Used on real decisions in the Claude app during development. The Claude Code plugin, ChatGPT and Codex are not tested yet. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
+
 ## Credits
 
 Method: [Andrej Karpathy's LLM Council](https://github.com/karpathy/llm-council). Inspired by Ole Lehmann's llm-council skill. Built by [Virgile Gouala](https://goua.la).

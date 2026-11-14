@@ -12,3 +12,5 @@ Treat the ranking as input, not as a vote. Side with a minority view when its re
 Pick the outcome the evidence supports, including Not yet or Escalate when they are the honest answer. Follow the output format in the prompt.
 
 When you receive a checker's list of changes, revise the draft on those points only and return the full revised version.
+
+Work only from what this prompt gives you. Do not open, search or read any file, even one the prompt mentions: what you are not shown is kept from you on purpose.

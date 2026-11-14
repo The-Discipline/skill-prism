@@ -1,6 +1,6 @@
 # Prism identity brief
 
-Everything needed to design Prism's logo, visuals and diagrams. Source of truth: `SKILL.md` v0.1.
+Everything needed to design Prism's logo, visuals and diagrams. Source of truth: `SKILL.md` v0.7.
 
 ## 1. Name and taglines
 
@@ -94,7 +94,7 @@ Each advisor is one ray of the split light. Pairs create tension: Contrarian vs 
 **Logo directions**
 - **A. Split and recombine:** a triangle, one white line entering on the left, five colored lines leaving on the right and converging back to a single point. Tells the whole story. Best for the hero and README header.
 - **B. Triangle only:** a plain triangle with five thin colored lines inside. Works at favicon size (16 to 32 px), where direction A becomes unreadable.
-- **C. Wordmark:** "prism" in DM Sans, lowercase like goua.la, with the triangle replacing the dot or sitting before the word.
+- **C. Wordmark:** "prism" in Satoshi, lowercase like goua.la, with the triangle replacing the dot or sitting before the word.
 
 Use A for large formats, B for icons and avatars, C for headers.
 
@@ -113,7 +113,7 @@ The goua.la palette has four accents (teal, coral, purple, orange). Prism needs 
 Keep illustrations black and white like the rest of goua.la. Color appears only on the five rays and in diagrams.
 
 **Typography and background**
-- DM Sans, as goua.la
+- Satoshi for titles, Inter for body, as goua.la's current design system
 - Dark background #191919 by default
 
 ## 5. Diagrams

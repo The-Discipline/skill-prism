@@ -41,8 +41,8 @@ If the decision is clear but the options aren't, ask one question to get them.
 Look for context in this order and stop once the decision is covered:
 
 1. Files or text attached to this request
-2. A context file in the workspace or project (`prismatize-context.md`, `prism-context.md`, `CLAUDE.md`, a `memory/` folder) or the platform's memory
-3. Connected tools holding business documents (Notion, Google Drive), if the user's setup points there
+2. A business source in the workspace or project: a context file (`prismatize-context.md`, `prism-context.md`), a "Grey matter" / "Matière grise" page, a `memory/` folder, or the platform's memory. A `CLAUDE.md` describes a code project, not a business: don't use it as context.
+3. Any connected app or link the user points to (Notion, Google Drive...), in any readable format
 4. The current conversation
 
 Any document works: an offers page, a pitch deck, a Notion page, notes. The context template is a checklist of what matters, not a required format. Keep this short: you need the few facts this decision depends on, not a full audit.
@@ -50,7 +50,7 @@ Any document works: an offers page, a pitch deck, a Notion page, notes. The cont
 Then check coverage. List what this specific decision needs (a pricing decision needs current prices, capacity and client sources; a channel decision needs available hours and where past clients came from) and compare with what you found.
 
 - **Covered and recent:** state in one line what you used and from where. Example: "Context: offers, pricing and pipeline from prismatize-context.md (updated 3 weeks ago)."
-- **Gaps:** show this before running, naming the missing items, and wait for the answer:
+- **Gaps:** show this before running, in the user's language, naming the missing items, and wait for the answer:
 
   > Prism needs your business context to give advice that fits you. For this decision, I'm missing: {2 to 4 specific items}.
   > 1. Answer these now (about 2 minutes)

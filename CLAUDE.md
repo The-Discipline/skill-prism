@@ -19,7 +19,7 @@ A Claude skill: a decision council for one-person businesses. One decision goes 
 - `.claude-plugin/marketplace.json` + `plugins/prism/.claude-plugin/plugin.json`: make the repo a Claude Code plugin marketplace.
 - `docs/`: how it works (diagrams), platforms, context guide, examples, identity brief.
 - `examples/`: fictional filled context; run example (to do, from a real run).
-- `scripts/`: style check, ZIP build.
+- `scripts/`: style check, ZIP build, `skill_review.py` (run before each release: frontmatter, sizes, broken file references, versions, repeated instructions, stale words).
 
 ## Locked decisions (with the reason)
 
@@ -30,6 +30,7 @@ A Claude skill: a decision council for one-person businesses. One decision goes 
 - **Chairman has four outcomes:** Verdict, Top 3 (only on request), Not yet (missing fact + cheapest test + deadline + go/stop), Escalate (legal/tax/regulatory, binding high-stakes commitments, or decisions shared with a partner or family: name who decides, questions to bring, what not to do before). Ole's version forbade "it depends", which pushed confident verdicts on guesses.
 - **Verdict check (from a software-factory review loop):** a checker agent tests the chairman's draft on 7 points, answers PASS or CHANGES, one revision max. More rounds make a verdict more convincing, not better. Pure legal/tax questions skip the council and go straight to Escalate.
 - **Model per role in Claude Code:** plugin agents in `plugins/prism/agents/` (advisor and ranker on sonnet; gap-finder, chairman, checker on opus). Claude app runs everything on the selected model.
+- **Agents work only from their prompt.** Every plugin agent says so in its instructions. They keep `tools: Read` because an empty tool list can stop a subagent from launching (Claude Code docs, Nov 2026); removing Read with `disallowedTools` is the stricter option, to test in Claude Code before shipping. Until then, the Buyer's blind spot rely on the prompt.
 - **Claim tags:** [observed], [assumed], [guess] in advisor output; [observed], [assumed], [goal], [constraint] in context. Chairman weights observed over assumed over guess.
 - **Solo-business checklist in the chairman:** cash runway, non-billable hours at the user's rate, client concentration, one-person capacity, reversibility.
 - **Two output flags:** verdict vs top 3; concise (default) vs detailed. No multi-council router, no exploration mode in v1.
@@ -50,7 +51,7 @@ A Claude skill: a decision council for one-person businesses. One decision goes 
 - Exploration mode
 - Numeric confidence scores ("78%")
 - Weighted scoring tables for options
-- Names: Cabinet (means toilet in French), Quorum (several LLM council skills already use it), Council (same as the original), Comity (false friend), Horde, Conciliabule, Agora, Arbiter, MosAIc, Voices (kept for the future voice skill)
+- Names: Cabinet (means toilet in French), Quorum (several LLM council skills already use it), Council (same as the original), Comity (false friend), Horde, Conciliabule, Agora, Arbiter, MosAIc, Voices
 
 ## Open questions
 
@@ -67,6 +68,7 @@ Apply `plugins/prism/skills/prismatize/style.md` to every file, docs included:
 - Bullet points over tables.
 - Each instruction appears once in SKILL.md. Repetition dilutes the rules that matter.
 
-## Future project
+## Sister skill and shared data
 
-A cross-platform "voice bible" writing skill (voice, anti-patterns). It should reuse `style.md` as its base and read the same user context source. Possible name: Voices.
+- Plume (`skill-plume`) is the writing skill: it writes in the user's voice. Same conventions as this repo (cross-platform, style rules, docs updated with every change).
+- Prism's context and Plume's business data (offers, readers, positioning) should come from one business source: the owner's Grey matter / Matière grise project. Open question: its format and how both skills read it.
