@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.2 (2026-11-15)
+- Docs: `docs/getting-started.md`, the user guide: asking a decision, giving context, reading the four outcomes, show the council, after the verdict, troubleshooting. Linked from the README.
+- README: install commands point to The-Discipline/skill-prism.
+
 ## 0.7.1 (2026-11-14)
 - Context loading: a `CLAUDE.md` is no longer read as business context (it describes a code project). Grey matter / Matière grise pages and any connected app or link count as business sources.
 - The missing-context message follows the user's language.

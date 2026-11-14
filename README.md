@@ -71,6 +71,9 @@ Details and all paths in [docs/how-it-works.md](docs/how-it-works.md).
 
 ## Install
 
+After installing, read [Getting started](docs/getting-started.md): how to ask, how to read the verdict, what to do after.
+
+
 **Claude app (web, desktop, mobile)**
 1. Download `prismatize.zip` from the latest [release](../../releases).
 2. In Claude: Customize > Skills > "+" > Create skill > Upload a skill.
@@ -78,7 +81,7 @@ Details and all paths in [docs/how-it-works.md](docs/how-it-works.md).
 
 **Claude Code**
 ```bash
-claude plugin marketplace add <owner>/skill-prism
+claude plugin marketplace add The-Discipline/skill-prism
 claude plugin install prism@prismatize
 ```
 
@@ -113,7 +116,7 @@ A full run uses 9 agents, 10 when the checker asks for a revision. In Claude Cod
 
 ## Status
 
-**v0.7.1.** Used on real decisions in the Claude app during development. The Claude Code plugin, ChatGPT and Codex are not tested yet. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
+**v0.7.2.** Used on real decisions in the Claude app during development. The Claude Code plugin, ChatGPT and Codex are not tested yet. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
 
 ## Credits
 

@@ -17,7 +17,7 @@ A Claude skill: a decision council for one-person businesses. One decision goes 
 
 - `plugins/prism/skills/prismatize/`: the skill (SKILL.md, style.md, context-template.md). This folder is also what gets zipped for Claude app upload.
 - `.claude-plugin/marketplace.json` + `plugins/prism/.claude-plugin/plugin.json`: make the repo a Claude Code plugin marketplace.
-- `docs/`: how it works (diagrams), platforms, context guide, examples, identity brief.
+- `docs/`: getting started (user guide, keep in sync with SKILL.md), how it works (diagrams), platforms, context guide, examples, identity brief.
 - `examples/`: fictional filled context; run example (to do, from a real run).
 - `scripts/`: style check, ZIP build, `skill_review.py` (run before each release: frontmatter, sizes, broken file references, versions, repeated instructions, stale words).
 
@@ -30,7 +30,7 @@ A Claude skill: a decision council for one-person businesses. One decision goes 
 - **Chairman has four outcomes:** Verdict, Top 3 (only on request), Not yet (missing fact + cheapest test + deadline + go/stop), Escalate (legal/tax/regulatory, binding high-stakes commitments, or decisions shared with a partner or family: name who decides, questions to bring, what not to do before). Ole's version forbade "it depends", which pushed confident verdicts on guesses.
 - **Verdict check (from a software-factory review loop):** a checker agent tests the chairman's draft on 7 points, answers PASS or CHANGES, one revision max. More rounds make a verdict more convincing, not better. Pure legal/tax questions skip the council and go straight to Escalate.
 - **Model per role in Claude Code:** plugin agents in `plugins/prism/agents/` (advisor and ranker on sonnet; gap-finder, chairman, checker on opus). Claude app runs everything on the selected model.
-- **Agents work only from their prompt.** Every plugin agent says so in its instructions. They keep `tools: Read` because an empty tool list can stop a subagent from launching (Claude Code docs, Nov 2026); removing Read with `disallowedTools` is the stricter option, to test in Claude Code before shipping. Until then, the Buyer's blind spot rely on the prompt.
+- **Agents work only from their prompt.** Every plugin agent says so in its instructions. They keep `tools: Read` because an empty tool list can stop a subagent from launching (Claude Code docs, Nov 2026); removing Read with `disallowedTools` is the stricter option, to test in Claude Code before shipping. Until then, the Buyer's blind spot relies on the prompt.
 - **Claim tags:** [observed], [assumed], [guess] in advisor output; [observed], [assumed], [goal], [constraint] in context. Chairman weights observed over assumed over guess.
 - **Solo-business checklist in the chairman:** cash runway, non-billable hours at the user's rate, client concentration, one-person capacity, reversibility.
 - **Two output flags:** verdict vs top 3; concise (default) vs detailed. No multi-council router, no exploration mode in v1.
