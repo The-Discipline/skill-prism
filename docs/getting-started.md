@@ -2,9 +2,9 @@
 
 How to get a useful verdict from Prism, and how to get better ones over time. For installation, see the [README](../README.md#install).
 
-## 1. Bring a decision, not a question
+## 1. Bring a decision with options
 
-Prism works on a choice between options, with something at stake. Open questions get an answer about what Prism can do, not a council.
+Prism works on a choice between options, with something at stake. An open question gets a short reply on what Prism needs, and no council.
 
 - Weak: "How do I find more clients?"
   Better: "For the next 3 months, should I post on LinkedIn twice a week or ask my past clients for referrals?"
@@ -33,7 +33,7 @@ Every run ends with one of four outcomes:
 
 - **Verdict:** one recommendation, when the evidence supports it.
 - **Top 3:** ranked options. Only when you ask for alternatives ("give me the top 3").
-- **Not yet:** the decision depends on a fact nobody has. You get the cheapest test to get it, a deadline, and the results that mean go or stop. This is a full answer, not a dodge.
+- **Not yet:** the decision depends on a fact nobody has. You get the cheapest test to get it, a deadline, and the results that mean go or stop. It is a complete answer.
 - **Escalate:** the call belongs to someone else: a lawyer, an accountant, a partner, your family. You get the questions to bring them and what not to do before talking to them.
 
 In a verdict, three lines matter more than the recommendation itself:
@@ -61,7 +61,7 @@ Ask for "detailed" before the run to get where the advisors agree, where they cl
 
 - Do the "Do first" action.
 - When results come in, add them to your context document: what you did, what happened, with the date. Never paste Prism's verdict into your context: past verdicts bias the next council.
-- If you want to track decisions, keep a short log (date, decision, verdict, test, review date). Prism can write the entry for you.
+- If you want to track decisions, ask Prism to log it: it adds one entry (date, decision, outcome, first action, review date) to `decisions.md` or wherever you keep notes, and shows it. Prism never writes anything without being asked.
 
 ## 6. When it goes wrong
 

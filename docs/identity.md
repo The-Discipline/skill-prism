@@ -208,7 +208,7 @@ flowchart LR
 
 ## 6. Copy for the "how it works" section
 
-1. **Bring a decision.** A real choice with options, not an open question.
+1. **Bring a decision.** A real choice between options.
 2. **Prism reads your context.** Offers, prices, clients, capacity. If something's missing, it asks before running.
 3. **Five advisors answer separately.** Each from one angle, none sees the others.
 4. **Two reviewers judge anonymously.** One ranks the answers, one hunts for what everyone missed.

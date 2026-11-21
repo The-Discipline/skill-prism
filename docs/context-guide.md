@@ -3,7 +3,7 @@
 Prism gives advice that fits you only when it knows your business. This guide explains how to fill the context file.
 
 ## Where to put it
-- Any document works: an offers page, a pitch deck, a Notion page, your notes. Prism reads what it finds and asks for what's missing. The template is a checklist of what matters, not a required format.
+- Any document works: an offers page, a pitch deck, a Notion page, your notes. Prism reads what it finds and asks for what's missing. The template is a checklist of what matters.
 - For the best results, save your copy of [the template](../plugins/prism/skills/prismatize/context-template.md) as `prismatize-context.md` in your project, or attach it when you ask a question. Tagging facts yourself ([observed] vs [assumed]) is the one thing Prism can only guess otherwise.
 - Keep it private. This repo's `.gitignore` excludes `prismatize-context.md`, `prism-context.md` and `decisions.md` so they can't be committed by accident.
 

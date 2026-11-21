@@ -48,7 +48,7 @@ flowchart TD
     CO --> O3["3. Set up context file"] --> RUN
 ```
 
-## 4. The three outcomes
+## 4. The four outcomes
 
 ```mermaid
 flowchart TD

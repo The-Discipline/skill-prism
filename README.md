@@ -107,16 +107,13 @@ Options, in plain words:
 
 ## Models
 
-Use the best model in your app's model picker, with extended thinking on.
-
-Tested with (October 2026):
-- Claude Opus 5.5
+Use the best model in your app's model picker, with extended thinking on. No model is listed as tested yet: Prism hasn't run on a real decision.
 
 A full run uses 9 agents, 10 when the checker asks for a revision. In Claude Code, the plugin assigns models by role: the advisors and the Ranker run on a mid-tier model, the Gap Finder, the Chairman and the Checker on the top model. On entry-level plans, it can use a noticeable share of your usage window.
 
 ## Status
 
-**v0.7.2.** Used on real decisions in the Claude app during development. The Claude Code plugin, ChatGPT and Codex are not tested yet. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
+**v0.8.0.** Not run on a real decision yet: the first real runs come next. The Claude Code plugin, ChatGPT and Codex are not tested either. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
 
 ## Credits
 

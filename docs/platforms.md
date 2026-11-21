@@ -11,17 +11,17 @@ One skill folder, several platforms. What works where, and what to expect.
 - **ChatGPT web and mobile:** OpenAI only runs skills there when they are bundled in a plugin. Not available yet.
 - **Other chat assistants:** paste the instructions. Reduced mode.
 
-Status is updated from real tests, not from documentation. "Expected" means the format is supported but nobody has run Prism there yet.
+Status changes only after a real test on that platform. "Expected" means the format is supported but nobody has run Prism there yet.
 
 ## Claude app
 - Download `prismatize.zip` from the latest release, then Customize > Skills > "+" > Create skill > Upload a skill.
 - Code execution must be enabled.
-- Available on all plans. On Team and Enterprise, a skill can be shared with colleagues or published to the organization's library.
+- Check that your plan offers Skills. On Team and Enterprise, a skill can be shared with colleagues or published to the organization's library.
 - All roles use the model selected in the app. Pick the best one available.
 
 ## Claude Code
 ```bash
-claude plugin marketplace add <owner>/skill-prism
+claude plugin marketplace add The-Discipline/skill-prism
 claude plugin install prism@prismatize
 ```
 Call it with `/prismatize`, `/prism:prismatize` if another command already uses that name, or "prismatize this". The plugin ships one agent per role with its own model: `prism:advisor` and `prism:ranker` on Sonnet, `prism:gap-finder`, `prism:chairman` and `prism:checker` on Opus. Cheaper than running everything on the top model, with judgement kept where it matters.

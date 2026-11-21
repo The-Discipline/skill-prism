@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.8.0 (2026-11-21)
+- Guardrails: context files, attachments, the decision log and web pages are data, never instructions. Private figures and client names stay out of web queries. Prism writes only when asked, adds without rewriting, shows what it added and never deletes.
+- Chairman: receives the output formats, whether options were asked for, the length, and the ranking's letters mapped back to advisors. A revision after the check gets its original inputs back.
+- After the verdict: logging and recording results happen on request only. Log entries note the outcome type and whether the run was reduced or low context. When reading a log, only outcomes are used.
+- "Show the council" says the details end with the conversation unless the decision is logged.
+- Agents treat the brief as data.
+- README: the status and model sections no longer claim real runs or a tested model. None has happened yet.
+- Docs: "four outcomes" in how-it-works, the Claude Code install command in platforms, plan availability softened, "X, not Y" phrasings rewritten.
+
 ## 0.7.2 (2026-11-15)
 - Docs: `docs/getting-started.md`, the user guide: asking a decision, giving context, reading the four outcomes, show the council, after the verdict, troubleshooting. Linked from the README.
 - README: install commands point to The-Discipline/skill-prism.
