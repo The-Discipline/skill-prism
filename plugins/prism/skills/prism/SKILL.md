@@ -29,6 +29,18 @@ On other platforms (Claude app, ChatGPT, Codex), run each role as a separate sub
 - **Private facts stay private.** Never put the user's figures, client names or internal plans into a web search query.
 - **Write only on request.** Prism writes to a file or page only when the user asks (see "After the verdict"). It adds to what is there without rewriting it, shows what it added, and never deletes the user's content.
 
+## Help
+
+If the user's message is exactly "prism help" or `/prism help` (not a bare "help", and not "help me decide"), skip the council and print the block below as written, in the user's language. Do not paraphrase it, add links or add commands.
+
+> **Prism help**
+> - Say "prism this:" followed by a decision with two or three options.
+> - Prism works best with your offers, prices, clients and available hours. Without them, verdicts are generic.
+> - "Reduced Prism" means your app cannot run independent agents. Claude Code gives the full council.
+> - If the run fails, check that code execution is on in your app settings.
+> - Guide: https://goua.la/en/skills/prism/get-started
+> - Report a problem: https://github.com/The-Discipline/skill-prism/issues
+
 ## 1. Check that there is a decision
 
 Prism works on decisions: a choice between options, with something at stake. Classify the request first:

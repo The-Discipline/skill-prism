@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.1 (2026-11-24)
+- Help: "prism help" (or `/prism help`) prints a fixed block: how to ask, why context matters, what "Reduced Prism" means, code execution, and links to the guide and the issue tracker. A bare "help" does not trigger it.
+- Directory submission: `plugins/prism/README.md`, a `license` field, `homepage`, `repository` and a 512x512 `icon` in `plugin.json`.
+- README: listing badge.
+
 ## 0.9.0 (2026-11-24)
 - The skill is named `prism`: skill folder, ZIP (`prism-<version>.zip`, `prism-latest.zip`), marketplace (`prism@prism`), explicit calls (`/prism`, `/prism:prism`, `@prism`, `$prism`) and context file (`prism-context.md`). The longer name used in 0.5 to 0.8 is gone. Anyone who installed an earlier version must reinstall.
 - Triggers: "prism this" and "run it through Prism". The two phrases built on the old name are removed.

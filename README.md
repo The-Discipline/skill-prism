@@ -2,6 +2,8 @@
 
 **One decision, five angles, one verdict.**
 
+[![Prism - Listed on Claude AI Directory](https://www.claudeai.directory/badge/prism?theme=dark)](https://www.claudeai.directory/launches/prism)
+
 A decision council for one-person businesses: freelancers, consultants, coaches, trainers, solo creators.
 
 When you run a business alone, nobody pushes back on your decisions. Prism gives you that push-back. It reads your business context, splits your decision into five angles (risk, root cause, upside, execution, and how a client sees it), has the answers reviewed anonymously, then gives you one verdict and one action for the next 48 hours. The verdict is checked before you see it. When the evidence isn't there, it says "not yet" and tells you the cheapest way to find out. When the decision belongs to someone else (a lawyer, an accountant, a partner), it says so and prepares you for that conversation.
@@ -99,7 +101,7 @@ Details in [docs/platforms.md](docs/platforms.md).
 
 ## Use it
 
-Say "prism this", followed by your decision. In Claude Code, type `/prism` (or `/prism:prism` if another command uses that name).
+Say "prism this", followed by your decision. In Claude Code, type `/prism` (or `/prism:prism` if another command uses that name). Say "prism help" for a short guide and the support links.
 
 Options, in plain words:
 - "give me the top 3" for ranked alternatives
@@ -113,7 +115,7 @@ A full run uses 9 agents, 10 when the checker asks for a revision. In Claude Cod
 
 ## Status
 
-**v0.9.0.** Not run on a real decision yet: the first real runs come next. The Claude Code plugin, ChatGPT and Codex are not tested either. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
+**v0.9.1.** Not run on a real decision yet: the first real runs come next. The Claude Code plugin, ChatGPT and Codex are not tested either. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
 
 ## Credits
 
