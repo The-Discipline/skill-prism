@@ -75,7 +75,7 @@ After installing, read [Getting started](docs/getting-started.md): how to ask, h
 
 
 **Claude app (web, desktop, mobile)**
-1. Download `prismatize.zip` from the latest [release](../../releases).
+1. Download `prismatize-latest.zip` from the latest [release](../../releases).
 2. In Claude: Customize > Skills > "+" > Create skill > Upload a skill.
 3. Make sure code execution is enabled.
 

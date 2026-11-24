@@ -14,7 +14,7 @@ One skill folder, several platforms. What works where, and what to expect.
 Status changes only after a real test on that platform. "Expected" means the format is supported but nobody has run Prism there yet.
 
 ## Claude app
-- Download `prismatize.zip` from the latest release, then Customize > Skills > "+" > Create skill > Upload a skill.
+- Download `prismatize-latest.zip` from the latest release, then Customize > Skills > "+" > Create skill > Upload a skill.
 - Code execution must be enabled.
 - Check that your plan offers Skills. On Team and Enterprise, a skill can be shared with colleagues or published to the organization's library.
 - All roles use the model selected in the app. Pick the best one available.
