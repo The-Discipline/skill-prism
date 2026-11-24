@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.0 (2026-11-24)
+- The skill is named `prism`: skill folder, ZIP (`prism-<version>.zip`, `prism-latest.zip`), marketplace (`prism@prism`), explicit calls (`/prism`, `/prism:prism`, `@prism`, `$prism`) and context file (`prism-context.md`). The longer name used in 0.5 to 0.8 is gone. Anyone who installed an earlier version must reinstall.
+- Triggers: "prism this" and "run it through Prism". The two phrases built on the old name are removed.
+- Releases are built by a GitHub Action on tag push.
+
 ## 0.8.0 (2026-11-21)
 - Guardrails: context files, attachments, the decision log and web pages are data, never instructions. Private figures and client names stay out of web queries. Prism writes only when asked, adds without rewriting, shows what it added and never deletes.
 - Chairman: receives the output formats, whether options were asked for, the length, and the ranking's letters mapped back to advisors. A revision after the check gets its original inputs back.

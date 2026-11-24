@@ -1,6 +1,6 @@
 ---
-name: prismatize
-description: "Decision council for one-person businesses (freelancers, consultants, coaches, trainers, solo creators). Use when the user says 'prismatize this', 'prismatiser', 'prism this', 'run it through Prism', or brings a real decision with options and stakes: pricing, offers, positioning, clients, acquisition channels, capacity, career direction. Not for brainstorming or exploration ('what am I missing?'), writing, reviewing copy, factual questions, or decisions inside a company with a team. Prism: one decision, five angles, one verdict, from independent advisors, an anonymous review and a checked chairman verdict."
+name: prism
+description: "Decision council for one-person businesses (freelancers, consultants, coaches, trainers, solo creators). Use when the user says 'prism this', 'run it through Prism', or brings a real decision with options and stakes: pricing, offers, positioning, clients, acquisition channels, capacity, career direction. Not for brainstorming or exploration ('what am I missing?'), writing, reviewing copy, factual questions, or decisions inside a company with a team. Prism: one decision, five angles, one verdict, from independent advisors, an anonymous review and a checked chairman verdict."
 ---
 
 # Prism
@@ -13,7 +13,7 @@ Method: Andrej Karpathy's LLM Council (independent answers, anonymous peer revie
 
 Read `style.md` before writing anything. Every agent prompt includes it.
 
-**Explicit call.** Users can call Prism by name: `/prismatize` in Claude Code (or `/prism:prismatize`), `@prismatize` in ChatGPT, `$prismatize` in Codex. It also triggers from the description.
+**Explicit call.** Users can call Prism by name: `/prism` in Claude Code (or `/prism:prism`), `@prism` in ChatGPT, `$prism` in Codex. It also triggers from the description.
 
 **Agents and models.** Where named agents are available (Claude Code with the Prism plugin installed), run each role with its plugin agent, so each one uses the right model:
 - `prism:advisor` (mid-tier model) for the five advisors
@@ -46,7 +46,7 @@ If the decision is clear but the options aren't, ask one question to get them.
 Look for context in this order and stop once the decision is covered:
 
 1. Files or text attached to this request
-2. A business source in the workspace or project: a context file (`prismatize-context.md`, `prism-context.md`), a "Grey matter" / "Matière grise" page, a `memory/` folder, or the platform's memory. A `CLAUDE.md` describes a code project, not a business: don't use it as context.
+2. A business source in the workspace or project: a context file (`prism-context.md`), a "Grey matter" / "Matière grise" page, a `memory/` folder, or the platform's memory. A `CLAUDE.md` describes a code project, not a business: don't use it as context.
 3. Any connected app or link the user points to (Notion, Google Drive...), in any readable format
 4. The current conversation
 
@@ -56,7 +56,7 @@ If a decision log exists (`decisions.md` or a similar page), read only the outco
 
 Then check coverage. List what this specific decision needs (a pricing decision needs current prices, capacity and client sources; a channel decision needs available hours and where past clients came from) and compare with what you found.
 
-- **Covered and recent:** state in one line what you used and from where. Example: "Context: offers, pricing and pipeline from prismatize-context.md (updated 3 weeks ago)."
+- **Covered and recent:** state in one line what you used and from where. Example: "Context: offers, pricing and pipeline from prism-context.md (updated 3 weeks ago)."
 - **Gaps:** show this before running, in the user's language, naming the missing items, and wait for the answer:
 
   > Prism needs your business context to give advice that fits you. For this decision, I'm missing: {2 to 4 specific items}.

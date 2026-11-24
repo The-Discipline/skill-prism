@@ -7,7 +7,7 @@ A decision council for one-person businesses: freelancers, consultants, coaches,
 When you run a business alone, nobody pushes back on your decisions. Prism gives you that push-back. It reads your business context, splits your decision into five angles (risk, root cause, upside, execution, and how a client sees it), has the answers reviewed anonymously, then gives you one verdict and one action for the next 48 hours. The verdict is checked before you see it. When the evidence isn't there, it says "not yet" and tells you the cheapest way to find out. When the decision belongs to someone else (a lawyer, an accountant, a partner), it says so and prepares you for that conversation.
 
 > [!IMPORTANT]
-> Prism is only as good as the context you give it. Without your offers, prices, clients and capacity, it gives generic advice. Start from the [context template](plugins/prism/skills/prismatize/context-template.md) and the [filled example](examples/context-example.md).
+> Prism is only as good as the context you give it. Without your offers, prices, clients and capacity, it gives generic advice. Start from the [context template](plugins/prism/skills/prism/context-template.md) and the [filled example](examples/context-example.md).
 
 ## Prism is for decisions
 
@@ -75,19 +75,19 @@ After installing, read [Getting started](docs/getting-started.md): how to ask, h
 
 
 **Claude app (web, desktop, mobile)**
-1. Download `prismatize-latest.zip` from the latest [release](../../releases).
+1. Download `prism-latest.zip` from the latest [release](../../releases).
 2. In Claude: Customize > Skills > "+" > Create skill > Upload a skill.
 3. Make sure code execution is enabled.
 
 **Claude Code**
 ```bash
 claude plugin marketplace add The-Discipline/skill-prism
-claude plugin install prism@prismatize
+claude plugin install prism@prism
 ```
 
-**ChatGPT desktop app:** upload the `prismatize` skill from Plugins > Skills, then call it with `@prismatize`.
+**ChatGPT desktop app:** upload the `prism` skill from Plugins > Skills, then call it with `@prism`.
 
-**Codex:** copy the `prismatize` folder to `~/.agents/skills/`, then call it with `$prismatize`.
+**Codex:** copy the `prism` folder to `~/.agents/skills/`, then call it with `$prism`.
 
 **Compatibility**
 - Claude Code: full, recommended
@@ -99,7 +99,7 @@ Details in [docs/platforms.md](docs/platforms.md).
 
 ## Use it
 
-Say "prismatize this" (or "prism this"), followed by your decision. In Claude Code, type `/prismatize` (or `/prism:prismatize` if another command uses that name).
+Say "prism this", followed by your decision. In Claude Code, type `/prism` (or `/prism:prism` if another command uses that name).
 
 Options, in plain words:
 - "give me the top 3" for ranked alternatives
@@ -113,7 +113,7 @@ A full run uses 9 agents, 10 when the checker asks for a revision. In Claude Cod
 
 ## Status
 
-**v0.8.0.** Not run on a real decision yet: the first real runs come next. The Claude Code plugin, ChatGPT and Codex are not tested either. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
+**v0.9.0.** Not run on a real decision yet: the first real runs come next. The Claude Code plugin, ChatGPT and Codex are not tested either. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
 
 ## Credits
 

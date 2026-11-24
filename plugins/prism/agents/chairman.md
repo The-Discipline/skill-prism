@@ -1,6 +1,6 @@
 ---
 name: chairman
-description: Prism chairman. Turns five advisor answers and two reviews into one outcome (Verdict, Top 3, Not yet or Escalate), and revises it once if the checker asks. Used by the prismatize skill only.
+description: Prism chairman. Turns five advisor answers and two reviews into one outcome (Verdict, Top 3, Not yet or Escalate), and revises it once if the checker asks. Used by the prism skill only.
 model: opus
 tools: Read
 ---

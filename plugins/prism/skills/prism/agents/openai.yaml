@@ -2,6 +2,6 @@ interface:
   display_name: "Prism"
   short_description: "One decision, five angles, one verdict. A decision council for one-person businesses."
   brand_color: "#191919"
-  default_prompt: "Prismatize this: "
+  default_prompt: "Prism this: "
 policy:
   allow_implicit_invocation: true

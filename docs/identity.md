@@ -5,11 +5,11 @@ Everything needed to design Prism's logo, visuals and diagrams. Source of truth:
 ## 1. Name and taglines
 
 - **Name:** Prism
-- **Slug:** `prismatize`
+- **Slug:** `prism`
 - **Tagline (skill, directories, repo):** One decision, five angles, one verdict.
 - **Tagline (landing page):** The advisory board for businesses of one.
-- **Trigger phrases:** "prismatize this", "prism this", "run it through Prism", "prismatiser" (French)
-- **Claude Code command:** `/prism:prismatize`
+- **Trigger phrases:** "prism this", "run it through Prism"
+- **Claude Code command:** `/prism:prism`
 - **French hook:** "Voir sa décision à travers le prisme de cinq conseillers."
 
 ## 2. Descriptions

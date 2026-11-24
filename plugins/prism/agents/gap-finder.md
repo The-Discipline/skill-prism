@@ -1,6 +1,6 @@
 ---
 name: gap-finder
-description: Prism Reviewer 2. Finds the shared unchecked assumption, the missing topic and the claim that would flip the decision across five advisor answers. Used by the prismatize skill only.
+description: Prism Reviewer 2. Finds the shared unchecked assumption, the missing topic and the claim that would flip the decision across five advisor answers. Used by the prism skill only.
 model: opus
 tools: Read
 ---

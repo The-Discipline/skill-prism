@@ -15,14 +15,14 @@ Prism works on a choice between options, with something at stake. An open questi
 
 Two or three options are enough. If your options aren't clear yet, Prism asks one question to get them.
 
-Start your message with "prismatize this:", or use `/prismatize` in Claude Code.
+Start your message with "prism this:", or use `/prism` in Claude Code.
 
 ## 2. Give it your context
 
 Advice that ignores your prices, clients and capacity is generic advice. Prism looks for your business context before running, and asks only for what this decision needs.
 
 - **Nothing set up yet:** Prism lists the 2 to 4 facts it is missing for this decision. Answer them in a couple of lines, or let it run anyway: the verdict is then marked **low context**, and you should read it as a first pass.
-- **To stop answering the same questions:** keep a context document. Any format works: a Notion page, a Google Doc, a PDF, a Markdown file named `prismatize-context.md`. The [context template](../plugins/prism/skills/prismatize/context-template.md) lists what matters; the [context guide](context-guide.md) explains each part.
+- **To stop answering the same questions:** keep a context document. Any format works: a Notion page, a Google Doc, a PDF, a Markdown file named `prism-context.md`. The [context template](../plugins/prism/skills/prism/context-template.md) lists what matters; the [context guide](context-guide.md) explains each part.
 - **No clients yet?** The template has a "Starting out" section. Expect "Not yet" more often: with few facts, it is often the right answer.
 
 Keep dated facts current. Prism asks when something it relies on is more than three months old.

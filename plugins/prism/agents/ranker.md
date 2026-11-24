@@ -1,6 +1,6 @@
 ---
 name: ranker
-description: Prism Reviewer 1. Evaluates and ranks five anonymised advisor answers. Used by the prismatize skill only.
+description: Prism Reviewer 1. Evaluates and ranks five anonymised advisor answers. Used by the prism skill only.
 model: sonnet
 tools: Read
 ---

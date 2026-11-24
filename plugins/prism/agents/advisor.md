@@ -1,6 +1,6 @@
 ---
 name: advisor
-description: One of the five Prism advisors (Contrarian, First Principles, Expansionist, Executor, Buyer). Used by the prismatize skill only, with the advisor's angle and brief passed in the prompt.
+description: One of the five Prism advisors (Contrarian, First Principles, Expansionist, Executor, Buyer). Used by the prism skill only, with the advisor's angle and brief passed in the prompt.
 model: sonnet
 tools: Read
 ---
