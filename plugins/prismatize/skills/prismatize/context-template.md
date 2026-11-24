@@ -1,6 +1,6 @@
-# Prism context
+# Prismatize context
 
-Fill this once. Update the "Now" section when something changes. Prism reads it before every decision.
+Fill this once. Update the "Now" section when something changes. Prismatize reads it before every decision.
 
 Keep this file private: don't commit it to a public repository.
 

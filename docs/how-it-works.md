@@ -1,4 +1,4 @@
-# How Prism works
+# How Prismatize works
 
 All diagrams in Mermaid. GitHub renders them directly in README files.
 
@@ -20,16 +20,16 @@ flowchart LR
     K -- "CHANGES, one revision" --> CH
 ```
 
-## 2. The gate: is this a Prism question?
+## 2. The gate: is this a Prismatize question?
 
 ```mermaid
 flowchart TD
     S["Your request"] --> G{"Is there a decision<br/>with options and stakes?"}
-    G -- "Yes" --> P["Run Prism"]
-    G -- "Cheap and reversible" --> D["Direct answer<br/>Prism only if you insist"]
+    G -- "Yes" --> P["Run Prismatize"]
+    G -- "Cheap and reversible" --> D["Direct answer<br/>Prismatize only if you insist"]
     G -- "Exploration" --> X["Offer to reframe:<br/>name 2 or 3 options"]
     X --> P
-    G -- "Writing, review, facts" --> N["Normal help, no Prism"]
+    G -- "Writing, review, facts" --> N["Normal help, no Prismatize"]
     P --> O{"Options clear?"}
     O -- "No" --> Q1["One question to get them"] --> CTX["Load context"]
     O -- "Yes" --> CTX
@@ -57,7 +57,7 @@ flowchart TD
     T -- "No" --> V["Verdict<br/>why, main risk,<br/>what would change it, do first"]
     T -- "Yes" --> T3["Top 3<br/>ranked, why #1 beats #2"]
     E -- "No, a key fact is missing" --> NY["Not yet<br/>cheapest test, deadline,<br/>go if / stop if"]
-    E -- "Not Prism's call" --> ES["Escalate<br/>who decides, questions to bring,<br/>what not to do before"]
+    E -- "Not Prismatize's call" --> ES["Escalate<br/>who decides, questions to bring,<br/>what not to do before"]
     V & T3 & NY & ES --> L{"Length"}
     L -- "Default" --> CON["Concise"]
     L -- "On request" --> DET["Detailed: agreement,<br/>clashes, what review caught,<br/>each advisor in one line"]
@@ -68,19 +68,19 @@ flowchart TD
 ```mermaid
 flowchart TD
     P["Platform check"] --> S{"Subagents available?"}
-    S -- "Yes" --> F["Full Prism<br/>5 independent advisors<br/>2 reviewers, 1 chairman,<br/>1 checker"]
+    S -- "Yes" --> F["Full Prismatize<br/>5 independent advisors<br/>2 reviewers, 1 chairman,<br/>1 checker"]
     S -- "No" --> R1["One analysis<br/>covering five angles"]
     R1 --> R2["Separate attack pass<br/>as Contrarian and Buyer"]
     R2 --> R3["Chairman verdict"]
     R3 --> R4["Check pass<br/>on the same 7 points"]
-    R4 --> LBL["Labeled: Reduced Prism"]
+    R4 --> LBL["Labeled: Reduced Prismatize"]
 ```
 
 ## 6. The learning loop
 
 ```mermaid
 flowchart LR
-    D["Decision"] --> P["Prism verdict"]
+    D["Decision"] --> P["Prismatize verdict"]
     P --> T["Test or action"]
     T --> O["Observed outcome"]
     O --> CF["Context file"]

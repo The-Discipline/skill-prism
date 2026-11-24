@@ -1,4 +1,4 @@
-# Prism context: example
+# Prismatize context: example
 
 A fictional freelancer, to show how the template is filled. Not a real person.
 

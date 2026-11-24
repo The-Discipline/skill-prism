@@ -1,4 +1,4 @@
-# Prism style rules
+# Prismatize style rules
 
 Apply to every agent prompt and to everything shown to the user.
 

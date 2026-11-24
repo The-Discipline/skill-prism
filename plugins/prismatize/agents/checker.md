@@ -1,6 +1,6 @@
 ---
 name: checker
-description: Prism verdict checker. Tests the chairman's draft against seven points and answers PASS or CHANGES. Used by the prism skill only.
+description: Prismatize verdict checker. Tests the chairman's draft against seven points and answers PASS or CHANGES. Used by the prismatize skill only.
 model: opus
 tools: Read
 ---

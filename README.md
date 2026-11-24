@@ -1,4 +1,4 @@
-# Prism
+# Prismatize
 
 **One decision, five angles, one verdict.**
 
@@ -6,27 +6,27 @@
 
 A decision council for one-person businesses: freelancers, consultants, coaches, trainers, solo creators.
 
-When you run a business alone, nobody pushes back on your decisions. Prism gives you that push-back. It reads your business context, splits your decision into five angles (risk, root cause, upside, execution, and how a client sees it), has the answers reviewed anonymously, then gives you one verdict and one action for the next 48 hours. The verdict is checked before you see it. When the evidence isn't there, it says "not yet" and tells you the cheapest way to find out. When the decision belongs to someone else (a lawyer, an accountant, a partner), it says so and prepares you for that conversation.
+When you run a business alone, nobody pushes back on your decisions. Prismatize gives you that push-back. It reads your business context, splits your decision into five angles (risk, root cause, upside, execution, and how a client sees it), has the answers reviewed anonymously, then gives you one verdict and one action for the next 48 hours. The verdict is checked before you see it. When the evidence isn't there, it says "not yet" and tells you the cheapest way to find out. When the decision belongs to someone else (a lawyer, an accountant, a partner), it says so and prepares you for that conversation.
 
 > [!IMPORTANT]
-> Prism is only as good as the context you give it. Without your offers, prices, clients and capacity, it gives generic advice. Start from the [context template](plugins/prism/skills/prism/context-template.md) and the [filled example](examples/context-example.md).
+> Prismatize is only as good as the context you give it. Without your offers, prices, clients and capacity, it gives generic advice. Start from the [context template](plugins/prismatize/skills/prismatize/context-template.md) and the [filled example](examples/context-example.md).
 
-## Prism is for decisions
+## Prismatize is for decisions
 
-Prism answers "which one?", not "what else?".
+Prismatize answers "which one?", not "what else?".
 
-**Good Prism questions**
+**Good Prismatize questions**
 - "I charge €650 a day. Should I go to €750 for new clients only, or for everyone in January?"
 - "Should my flagship offer be a 2-day workshop or a 3-month coaching program?"
 - "One client is 60% of my revenue and wants more days. Take them, or keep room for others?"
 - "I have 5 hours a week for marketing. LinkedIn content or direct outreach?"
 
-**Not for Prism**
-- "What am I missing in my business?" (Prism asks you to name 2 or 3 options first)
+**Not for Prismatize**
+- "What am I missing in my business?" (Prismatize asks you to name 2 or 3 options first)
 - Writing, editing or reviewing copy
 - Factual questions
 - Decisions inside a company with a team
-- Pure legal or tax questions (Prism points you to the right person and the questions to ask)
+- Pure legal or tax questions (Prismatize points you to the right person and the questions to ask)
 
 More in [docs/examples.md](docs/examples.md).
 
@@ -49,7 +49,7 @@ flowchart LR
 ```
 
 1. **Bring a decision.** A real choice with options.
-2. **Prism reads your context.** If something's missing, it asks before running.
+2. **Prismatize reads your context.** If something's missing, it asks before running.
 3. **Five advisors answer separately.** Each from one angle, none sees the others.
 4. **Two reviewers judge anonymously.** One ranks the answers, one hunts for what everyone missed.
 5. **The chairman decides.** A verdict, a top 3, "not yet" with the cheapest test to run, or "escalate" when someone else should decide.
@@ -77,19 +77,19 @@ After installing, read [Getting started](docs/getting-started.md): how to ask, h
 
 
 **Claude app (web, desktop, mobile)**
-1. Download `prism-latest.zip` from the latest [release](../../releases).
+1. Download `prismatize-latest.zip` from the latest [release](../../releases).
 2. In Claude: Customize > Skills > "+" > Create skill > Upload a skill.
 3. Make sure code execution is enabled.
 
 **Claude Code**
 ```bash
-claude plugin marketplace add The-Discipline/skill-prism
-claude plugin install prism@prism
+claude plugin marketplace add The-Discipline/skill-prismatize
+claude plugin install prismatize@prismatize
 ```
 
-**ChatGPT desktop app:** upload the `prism` skill from Plugins > Skills, then call it with `@prism`.
+**ChatGPT desktop app:** upload the `prismatize` skill from Plugins > Skills, then call it with `@prismatize`.
 
-**Codex:** copy the `prism` folder to `~/.agents/skills/`, then call it with `$prism`.
+**Codex:** copy the `prismatize` folder to `~/.agents/skills/`, then call it with `$prismatize`.
 
 **Compatibility**
 - Claude Code: full, recommended
@@ -101,7 +101,7 @@ Details in [docs/platforms.md](docs/platforms.md).
 
 ## Use it
 
-Say "prism this", followed by your decision. In Claude Code, type `/prism` (or `/prism:prism` if another command uses that name). Say "prism help" for a short guide and the support links.
+Say "prismatize this", followed by your decision. In Claude Code, type `/prismatize` (or `/prismatize:prismatize` if another command uses that name). Say "prismatize help" for a short guide and the support links.
 
 Options, in plain words:
 - "give me the top 3" for ranked alternatives
@@ -109,13 +109,13 @@ Options, in plain words:
 
 ## Models
 
-Use the best model in your app's model picker, with extended thinking on. No model is listed as tested yet: Prism hasn't run on a real decision.
+Use the best model in your app's model picker, with extended thinking on. No model is listed as tested yet: Prismatize hasn't run on a real decision.
 
 A full run uses 9 agents, 10 when the checker asks for a revision. In Claude Code, the plugin assigns models by role: the advisors and the Ranker run on a mid-tier model, the Gap Finder, the Chairman and the Checker on the top model. On entry-level plans, it can use a noticeable share of your usage window.
 
 ## Status
 
-**v0.9.1.** Not run on a real decision yet: the first real runs come next. The Claude Code plugin, ChatGPT and Codex are not tested either. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
+**v0.10.0.** Not run on a real decision yet: the first real runs come next. The Claude Code plugin, ChatGPT and Codex are not tested either. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
 
 ## Credits
 

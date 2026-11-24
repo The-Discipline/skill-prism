@@ -1,10 +1,10 @@
-# Getting started with Prism
+# Getting started with Prismatize
 
-How to get a useful verdict from Prism, and how to get better ones over time. For installation, see the [README](../README.md#install).
+How to get a useful verdict from Prismatize, and how to get better ones over time. For installation, see the [README](../README.md#install).
 
 ## 1. Bring a decision with options
 
-Prism works on a choice between options, with something at stake. An open question gets a short reply on what Prism needs, and no council.
+Prismatize works on a choice between options, with something at stake. An open question gets a short reply on what Prismatize needs, and no council.
 
 - Weak: "How do I find more clients?"
   Better: "For the next 3 months, should I post on LinkedIn twice a week or ask my past clients for referrals?"
@@ -13,19 +13,19 @@ Prism works on a choice between options, with something at stake. An open questi
 - Weak: "What am I missing in my business?"
   Better: "Should I drop my training offer to focus on Notion setups?"
 
-Two or three options are enough. If your options aren't clear yet, Prism asks one question to get them.
+Two or three options are enough. If your options aren't clear yet, Prismatize asks one question to get them.
 
-Start your message with "prism this:", or use `/prism` in Claude Code.
+Start your message with "prismatize this:", or use `/prismatize` in Claude Code.
 
 ## 2. Give it your context
 
-Advice that ignores your prices, clients and capacity is generic advice. Prism looks for your business context before running, and asks only for what this decision needs.
+Advice that ignores your prices, clients and capacity is generic advice. Prismatize looks for your business context before running, and asks only for what this decision needs.
 
-- **Nothing set up yet:** Prism lists the 2 to 4 facts it is missing for this decision. Answer them in a couple of lines, or let it run anyway: the verdict is then marked **low context**, and you should read it as a first pass.
-- **To stop answering the same questions:** keep a context document. Any format works: a Notion page, a Google Doc, a PDF, a Markdown file named `prism-context.md`. The [context template](../plugins/prism/skills/prism/context-template.md) lists what matters; the [context guide](context-guide.md) explains each part.
+- **Nothing set up yet:** Prismatize lists the 2 to 4 facts it is missing for this decision. Answer them in a couple of lines, or let it run anyway: the verdict is then marked **low context**, and you should read it as a first pass.
+- **To stop answering the same questions:** keep a context document. Any format works: a Notion page, a Google Doc, a PDF, a Markdown file named `prismatize-context.md`. The [context template](../plugins/prismatize/skills/prismatize/context-template.md) lists what matters; the [context guide](context-guide.md) explains each part.
 - **No clients yet?** The template has a "Starting out" section. Expect "Not yet" more often: with few facts, it is often the right answer.
 
-Keep dated facts current. Prism asks when something it relies on is more than three months old.
+Keep dated facts current. Prismatize asks when something it relies on is more than three months old.
 
 ## 3. Read the verdict
 
@@ -60,14 +60,14 @@ Ask for "detailed" before the run to get where the advisors agree, where they cl
 ## 5. After the verdict
 
 - Do the "Do first" action.
-- When results come in, add them to your context document: what you did, what happened, with the date. Never paste Prism's verdict into your context: past verdicts bias the next council.
-- If you want to track decisions, ask Prism to log it: it adds one entry (date, decision, outcome, first action, review date) to `decisions.md` or wherever you keep notes, and shows it. Prism never writes anything without being asked.
+- When results come in, add them to your context document: what you did, what happened, with the date. Never paste Prismatize's verdict into your context: past verdicts bias the next council.
+- If you want to track decisions, ask Prismatize to log it: it adds one entry (date, decision, outcome, first action, review date) to `decisions.md` or wherever you keep notes, and shows it. Prismatize never writes anything without being asked.
 
 ## 6. When it goes wrong
 
-- **The verdict feels generic:** the context is thin. Check which context Prism said it used before running, or the **Low context** mark on the result, add what's missing, run again.
+- **The verdict feels generic:** the context is thin. Check which context Prismatize said it used before running, or the **Low context** mark on the result, add what's missing, run again.
 - **It refused to run:** your request was a question, a brainstorm or a writing task. Rephrase it as a choice between options.
-- **"Reduced Prism" in the result:** your platform can't run independent advisors, so the five angles were written in one pass. Fine for a first look; use Claude Code for decisions that matter.
+- **"Reduced Prismatize" in the result:** your platform can't run independent advisors, so the five angles were written in one pass. Fine for a first look; use Claude Code for decisions that matter.
 - **The run is slow or uses a lot of your limit:** a full run calls nine agents, ten with a revision. Use it for decisions that deserve it.
 
-Prism is decision support, not legal, tax or financial advice. When a decision needs that, it says so.
+Prismatize is decision support, not legal, tax or financial advice. When a decision needs that, it says so.

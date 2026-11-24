@@ -16,7 +16,7 @@
 - "€500 or €700 a day to start?"
 - "Should I offer my first project at a discount in exchange for a testimonial?"
 
-At this stage most of what you know is untested. Expect Prism to answer "Not yet" more often, with the cheapest way to test before you commit.
+At this stage most of what you know is untested. Expect Prismatize to answer "Not yet" more often, with the cheapest way to test before you commit.
 
 ### First year (first clients, no rhythm yet)
 - "Should I accept a long mission that blocks all prospecting, or keep shorter ones?"
@@ -35,9 +35,9 @@ At this stage most of what you know is untested. Expect Prism to answer "Not yet
 - "Should I drop my historical offer to focus on the one I enjoy?"
 - "Should I keep freelancing, or take a full-time job at a similar income?"
 
-## Not for Prism (and what happens instead)
-- "What business could I start?" → too open. Prism asks you to name 2 or 3 options first.
-- "What am I missing in my business?" → same: name options, then Prism decides between them.
+## Not for Prismatize (and what happens instead)
+- "What business could I start?" → too open. Prismatize asks you to name 2 or 3 options first.
+- "What am I missing in my business?" → same: name options, then Prismatize decides between them.
 - "Write my LinkedIn post" → normal writing help
 - "Review my landing page copy" → normal review
 - "What's the average day rate in France?" → a factual answer
