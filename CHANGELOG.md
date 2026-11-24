@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.10.1 (2026-11-24)
+- Directory listing: `privacyPolicyUrl` and `keywords` in `plugin.json`.
+
 ## 0.10.0 (2026-11-24)
 - Renamed to Prismatize: repo `skill-prismatize`, plugin `prismatize` (display name "Prismatize"), skill folder, marketplace (`prismatize@prismatize`), explicit calls (`/prismatize`, `/prismatize:prismatize`, `@prismatize`, `$prismatize`), agents (`prismatize:advisor`, `prismatize:ranker`, `prismatize:gap-finder`, `prismatize:chairman`, `prismatize:checker`), ZIPs (`prismatize-<version>.zip`, `prismatize-latest.zip`) and context file (`prismatize-context.md`). The directory name check refused "prism". Anyone who installed 0.9.x must reinstall. GitHub redirects the old repo URL.
 - Triggers: "prismatize this" and "run it through Prismatize". Help: "prismatize help".

@@ -1,7 +1,7 @@
 {
   "name": "prismatize",
   "displayName": "Prismatize",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "One decision, five angles, one verdict. A decision council for one-person businesses.",
   "author": {
     "name": "Virgile Gouala"
@@ -9,5 +9,15 @@
   "license": "MIT",
   "homepage": "https://goua.la/en/skills/prismatize",
   "repository": "https://github.com/The-Discipline/skill-prismatize",
+  "keywords": [
+    "decision",
+    "decision-making",
+    "freelance",
+    "consulting",
+    "pricing",
+    "one-person business",
+    "solopreneur"
+  ],
+  "privacyPolicyUrl": "https://goua.la/en/privacy-policy",
   "icon": "./icon.png"
 }

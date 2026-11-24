@@ -115,7 +115,7 @@ A full run uses 9 agents, 10 when the checker asks for a revision. In Claude Cod
 
 ## Status
 
-**v0.10.0.** Not run on a real decision yet: the first real runs come next. The Claude Code plugin, ChatGPT and Codex are not tested either. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
+**v0.10.1.** Not run on a real decision yet: the first real runs come next. The Claude Code plugin, ChatGPT and Codex are not tested either. Each release is checked with `scripts/skill_review.py` and the checklist in `docs/platforms.md`.
 
 ## Credits
 
